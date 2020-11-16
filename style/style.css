@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+html {
+  background: url(/assets/background.jpg);
+}
+
+body {
+  margin: 0;
+  font-family: 'Goldman', cursive;
+  overflow: hidden;
+}
+
+.main {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 2% auto;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 20px 20px #00000082;
+          box-shadow: 0px 0px 20px 20px #00000082;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+  background: #fcfcfc;
+  padding: 0px 5px;
+  z-index: 99999;
+}
+
+#eye {
+  width: 30px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #cf687c;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px 12px #535380;
+          box-shadow: 0 0 20px 12px #535380;
+}
+
+#look-picture {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  right: 0;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.zIndex {
+  z-index: 99998 !important;
+}
+
+#menu {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background: #18a5c7f0;
+  right: 0;
+  bottom: 0;
+  z-index: 10002;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 25px;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+#pause:hover,
+#new-game:hover,
+#saved-game:hover,
+#best-score:hover,
+#new-size:hover,
+#settings:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.size-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.field {
+  width: 320px;
+  height: 320px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  position: relative;
+  background: #cdf5a5;
+  background: #0069b6;
+}
+
+.cell {
+  background-image: url(/assets/picture.jpg);
+  background-size: 320px;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .05s linear;
+  transition: all .05s linear;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#new-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#choose-size {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  height: 22px;
+  margin-right: 5px;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+#button-size {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid;
+  height: 24px;
+  background: none;
+  font-size: 18px;
+  line-height: 0;
+}
+/*# sourceMappingURL=style.css.map */
